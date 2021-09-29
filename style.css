@@ -25,8 +25,8 @@ body {
      z-index: 1;
      display: flex;
      width: 100%;
-     height: 60px;
-     background: rgba(0,0,0, 0.7);
+     height: 80px;
+     background: rgba(0,0,0, 0.5);
 }
 
 .navbar ul {
@@ -51,9 +51,7 @@ body {
 }
 
 .navbar ul li a:hover {
-     color: skyblue;
-     font-size: 2.1vh;
-
+     color: rgb(135, 206, 235);
 }
 
 section {
@@ -72,12 +70,63 @@ section h1 {
 }
 
 section h2 {
-     font-size: 2vh;
+     font-size: 2.5vh;
      border-bottom: solid;
      border-width: 2px;
-     border-color: skyblue;
-     padding-bottom: 6px;
+     border-color: rgb(135, 206, 235);
+     padding-bottom: 2px;
 }
+
+section h3 {
+     font-size: 2vh;
+     margin-top: 4px;
+}
+
+section p {
+     width: 70%;
+     font-size: 2.5vh;
+}
+
+.box {
+     position: relative;
+     width: 80%;
+     height: 60%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     scroll-snap-align: center;
+     background-color: #201e1f;
+}
+
+.box:before {
+     content: "";
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     right: -2px;
+     bottom: -2px;
+     background: #fffffff4;
+     z-index: -1;
+}
+
+.box:after {
+     content: "";
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     right: -2px;
+     bottom: -2px;
+     background: #fffffff4;
+     z-index: -2;
+     filter: blur(30px);
+}
+
+.box:before, .box:after {
+     background: linear-gradient(235deg, skyblue, #201e1f, skyblue);
+}
+
 
 @media  (max-width: 400px) {
      section h1 {
