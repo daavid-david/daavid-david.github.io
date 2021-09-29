@@ -34,11 +34,12 @@ body {
      list-style: none;
      width: 100vw;
      justify-content: center;
+     align-items: center;
 }
 
 .navbar ul li {
      margin: 0 1vh;
-     padding: 1.5rem 1vh;
+     padding: 1.5rem 1vw;
 }
 
 .navbar ul li a {
@@ -46,6 +47,7 @@ body {
      text-transform: uppercase;
      color: #F4F4F4F4;
      font-size: 2vh;
+     transition: all .4s;
 }
 
 .navbar ul li a:hover {
@@ -64,10 +66,14 @@ section {
 }
 
 section h1 {
-     font-size: 4rem;
+     font-size: 4vh;
 }
 
-section p {
-     font-size: 1.5rem;
+section h2 {
+     font-size: 2vh;
+     border-bottom: solid;
+     border-width: 1px;
+     border-color: skyblue;
+     padding-bottom: 6px;
 }
 
