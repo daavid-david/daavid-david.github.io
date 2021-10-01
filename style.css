@@ -135,23 +135,24 @@ section p {
 }
 
 .logo {
-     width: 70px;
+     width: 60px;
      margin: 5vh 2.5vh 1vh 2.5vh;
-     transition: all 0.5s;
+     transition: all 0.6s;
 }
 
 .logo:hover {
      transform: translateY(-20%);
 }
 
-@media  (max-width: 400px) {
+@media  (max-width: 380px) {
      section h1 {
           font-size: 3.2vh;
+          margin-bottom: 20px;
      }
 
      .logo {
-          width: 40px;
-          margin: 12px 2.5vh 5px 2.5vh;
+          width: 20px;
+          margin: 5px 2.5vh 3px 2.5vh;
      }
 }
 
