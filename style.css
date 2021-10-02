@@ -136,7 +136,7 @@ section p {
 
 .logo {
      width: 60px;
-     margin: 5vh 2.5vh 1vh 2.5vh;
+     margin: 5vh 2vw 1vh 2vw;
      transition: all 0.6s;
 }
 
@@ -144,29 +144,14 @@ section p {
      transform: translateY(-20%);
 }
 
-@media  (max-width: 380px) {
+@media  (max-width: 580px) {
      section h1 {
           font-size: 3.2vh;
           margin-bottom: 20px;
      }
 
      .logo {
-          width: 20px;
-          margin: 5px 2.5vh 3px 2.5vh;
-     }
-}
-
-@media  (max-width: 779px) {
-     .logo {
           width: 40px;
-          margin: 15px 3vh 5px 3vh;
+          margin: 1vh 2.5vw 1vh 2vw;
      }
 }
-
-@media (max-width: 359px) {
-     .logo {
-          width: 35px;
-          margin: 10px 3vh 5px 3vh;
-     }
-}
-
