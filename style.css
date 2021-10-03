@@ -152,6 +152,10 @@ section p {
           margin-bottom: 20px;
      }
 
+     .navbar ul li a {
+          font-size: 3.5vw;
+     }
+
      .logo {
           width: 40px;
           margin: 1vh 2.5vw 1vh 2vw;
