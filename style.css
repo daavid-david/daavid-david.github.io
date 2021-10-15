@@ -176,4 +176,9 @@ section p {
      .contact-border {
           border: none;
      }
+
+     section p {
+          width: 80%;
+          font-size: 2.1vh;
+     }
 }
