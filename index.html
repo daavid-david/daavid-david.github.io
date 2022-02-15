@@ -7,7 +7,7 @@
      <title>David Mikulas</title>
 
      <!-- linking style/java scripts-->
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="styles/style.css">
 
      <!-- linking fonts-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,7 @@
                <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#knowledge">Knowledge</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -30,6 +31,7 @@
                     <h1>Welcome to my page</h1>
                     <h2>My name is David</h2>
                     <h3>software developer</h3>
+                    <img src="files/logo1-big.png" alt="personal logo" id="personal-logo">
                </div>
           </section>
           <section id="about">
@@ -40,9 +42,38 @@
                     last year at the Business academy high school. Business school
                     wasn't my cup of tea so I decided to learn programming & web development
                     by myself. I started just 2 years ago with basics of HTML and CSS, then I 
-                    dived deeper into programming and I started to learn Python and Javascript.
-                    Now I'm building websites and projects and I'm ready for every occasion to learn
-                    and develop a new skill</p>
+                    dived deeper into programming and I started to learn Python and Javascript, then React.
+                    Now I'm building apps, websites and projects and I'm ready for every occasion to learn
+                    and develop a new skill <br>You can preview the showcase of my projects in <strong>"Work"</strong> Tab</p>
+               </div>
+          </section>
+          <section id="knowledge">
+               <div class="box knowledge">
+                    <h1>My knowledge in some technologies</h1>
+                    <div class="first-bar">
+                         <h2 class="bar-title">Python</h2>
+                         <div id="myProgress" class="python">
+                              <div id="myBar1" class="pythonBar"></div>
+                         </div>
+                    </div>
+                    <div class="second-bar">
+                         <h2 class="bar-title">JavaScript</h2>
+                         <div id="myProgress" class="javascript">
+                              <div id="myBar2" class="javascriptBar"></div>
+                         </div>
+                    </div>
+                    <div class="third-bar">
+                         <h2 class="bar-title">php</h2>
+                         <div id="myProgress" class="php">
+                              <div id="myBar3" class="phpBar"></div>
+                         </div>
+                    </div>
+                    <div class="fourth-bar">
+                         <h2 class="bar-title">HTML & CSS</h2>
+                         <div id="myProgress" class="htmlcss">
+                              <div id="myBar4" class="htmlcssBar"></div>
+                         </div>
+                    </div>
                </div>
           </section>
           <section id="skills">
@@ -77,10 +108,11 @@
           <section id="contact">
                <div class="box">
                     <h1>Contact</h1>
-                    <h2 class="contact-border">You can contact me through any
+                    <h2 class="contact-border">
+                    You can contact me through any
                     of the following platforms</h2>
                     <div class="container-l">
-                         <a href=""><img src="files/gmail.png" alt="logo-gm" class="logo"></a>
+                         <a href="mailto: mikulasdejvid@gmail.com" target="_blank"><img src="files/gmail.png" alt="logo-gm" class="logo"></a>
                          <a href="https://www.instagram.com/dajvid_" target=”_blank><img src="files/instagram.png" alt="logo-ig" class="logo"></a>
                          <a href="https://www.facebook.com/david.mikulas.391" target=”_blank><img src="files/facebook.png" alt="logo-fb" class="logo"></a>
                          <a href="https://github.com/daavid-david" target=”_blank><img src="files/github.png" alt="logo-gh" class="logo">
@@ -88,5 +120,6 @@
                </div>
           </section>
      </div>
+     <script src="app.js"></script>
 </body>
 </html>

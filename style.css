@@ -105,6 +105,13 @@ section p {
 
 }
 
+#my_logo {
+     position: relative;
+     margin-top: 150px;
+     margin-bottom: 0px;
+     
+}
+
 .box:before {
      content: "";
      position: absolute;
