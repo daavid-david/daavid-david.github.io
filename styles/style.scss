@@ -151,7 +151,7 @@ section {
 }
 
 #personal-logo {
-     width: 7%;
+     width: 7vh;
      position: absolute;
      top: 71%;
 }
@@ -172,7 +172,7 @@ section {
 
 .pythonBar {
      height: 20px;
-     width: 0%;
+     max-width: 85%;
      border-radius: 5px;
      background-color: rgb(127, 206, 238);
      transition: ease-in-out .4;
@@ -182,7 +182,7 @@ section {
 
 .javascriptBar {
      height: 20px;
-     width: 0%;
+     max-width: 70%;
      border-radius: 5px;
      background-color: #95ec52;
      transition: ease-in-out .4;
@@ -192,7 +192,7 @@ section {
 
 .phpBar {
      height: 20px;
-     width: 0%;
+     max-width: 50%;
      border-radius: 5px;
      background-color: #ffef5e;
      transition: ease-in-out .4;
@@ -202,7 +202,7 @@ section {
 
 .htmlcssBar {
      height: 20px;
-     width: 0%;
+     max-width: 99%;
      border-radius: 5px;
      background-color: #f45dff;
      transition: ease-in-out .4;
