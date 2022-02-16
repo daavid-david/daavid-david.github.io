@@ -24,13 +24,14 @@ body {
      top: 0;
      z-index: 1;
      display: flex;
+     justify-content: space-between;
      width: 100%;
      height: 60px;
      background: rgba(0,0,0, 0.5);
      ul {
           display: flex;
           list-style: none;
-          width: 100vw;
+          width: 100%;
           justify-content: center;
           align-items: center;
           li {
@@ -47,6 +48,16 @@ body {
                     }
                }
           }
+     }
+     .personal-logo-nav {
+          position: absolute;
+          width: 8rem;
+          top: 10%;
+          left: 1%;
+     }
+
+     .burger-div {
+          width: 0%;
      }
 }
 
@@ -151,7 +162,7 @@ section {
 }
 
 #personal-logo {
-     width: 7vh;
+     width: 11vh;
      position: absolute;
      top: 71%;
 }
@@ -215,6 +226,11 @@ section {
      width: 40%;
      margin-left: 30%;
 }
+
+@media (max-width: 1000px) {
+     .navbar ul{
+          visibility: hidden;
+     }
 
 @media  (max-width: 580px) {
      section h1 {
