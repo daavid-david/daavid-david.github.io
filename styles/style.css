@@ -27,9 +27,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 60px;
   background: rgba(0, 0, 0, 0.5);
@@ -51,7 +51,7 @@ body {
 
 .navbar ul li {
   margin: 0 1vh;
-  padding: 1.5rem 1vw;
+  padding: 1.2rem 1vw;
 }
 
 .navbar ul li a {
@@ -67,15 +67,14 @@ body {
   color: skyblue;
 }
 
-.navbar .personal-logo-nav {
+.nav-logo {
   position: absolute;
-  width: 8rem;
-  top: 10%;
-  left: 1%;
+  top: 5px;
+  left: 10px;
 }
 
-.navbar .burger-div {
-  width: 0%;
+.nav-logo img {
+  height: 50px;
 }
 
 section {
@@ -234,8 +233,8 @@ section p {
   max-width: 85%;
   border-radius: 5px;
   background-color: #7fceee;
-  -webkit-transition: ease-in-out .4;
-  transition: ease-in-out .4;
+  -webkit-transition: all .3;
+  transition: all .3;
   -webkit-box-shadow: 0px 0px 30px 0.2px #4cb4b4;
           box-shadow: 0px 0px 30px 0.2px #4cb4b4;
   margin-bottom: 50px;
@@ -284,18 +283,16 @@ section p {
 }
 
 @media (max-width: 1000px) {
-  .navbar ul {
-    visibility: hidden;
-  }
-  .burger {
-    width: 50%;
+  .nav-logo {
+    top: 95px;
+    left: auto;
   }
 }
 
 @media (max-width: 580px) {
   section h1 {
-    font-size: 3.2vh;
-    margin-bottom: 20px;
+    font-size: 3vh;
+    margin-bottom: 18px;
   }
   .navbar ul li a {
     font-size: 2.8vw;
@@ -312,7 +309,7 @@ section p {
   }
   section p {
     width: 80%;
-    font-size: 2.1vh;
+    font-size: 1.9vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
