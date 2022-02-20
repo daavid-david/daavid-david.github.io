@@ -53,10 +53,10 @@ body {
 
 .nav-logo {
      position: absolute;
-     top: 5px;
-     left: 10px;
+     top: 8px;
+     left: 14px;
      img {
-          height: 50px;
+          height: 45px;
      }
 }
 
@@ -228,8 +228,7 @@ section {
 
 @media (max-width: 1000px) {
      .nav-logo {
-          top: 95px;
-          left: auto;
+          display: none;
      }
 }
 
