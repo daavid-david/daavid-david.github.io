@@ -13,7 +13,7 @@ elem2.style.width = 0;
 elem3.style.width = 0;
 elem4.style.width = 0;
 
-function move() {
+function move_bars() {
      if (i == 0 && !executed) {
           i = 1;
           var width = 1;
@@ -34,7 +34,8 @@ function move() {
      executed = true;
 };
 
-knowledgeBars.addEventListener("mouseover", move)
+knowledgeBars.addEventListener("mouseover", move_bars)
+
 
 $(document).ready(function(){
      $('html').animate({scrollTop:0}, 1);
