@@ -11,6 +11,16 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com/%22%">
+     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Shizuru&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=League+Spartan:wght@500&family=Shizuru&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar Section -->
@@ -28,13 +38,11 @@
           <li class="navbar__item">
             <a href="#about" class="navbar__links" id="about-page">O mne</a>
           </li>
-          <li class="navbar__item">
-            <a href="#services" class="navbar__links" id="services-page"
-              >Ponuka</a
-            >
+          <li class="navbar__btn">
+            <a href="#services" class="button" id="signup">Portfolio</a>
           </li>
           <li class="navbar__btn">
-            <a href="#sign-up" class="button" id="signup">Portfolio</a>
+               <a class="navbar-ig" href="https://www.instagram.com/flows.3d" target="_blank"><img src="files/icons/ig2.png" alt="instagram"></a>
           </li>
         </ul>
       </div>
@@ -43,9 +51,9 @@
     <!-- Hero Section -->
     <div class="hero" id="home">
       <div class="hero__container">
-        <h1 class="hero__heading">Objav <span> Flows3D</span></h1>
-        <p class="hero__description">Nekonečné možnosti</p>
-        <button class="main__btn"><a href="#sign-up">Portfolio</a></button>
+        <h1 class="hero__heading"><span> Flows3D</span></h1>
+        <p class="hero__description">Digital Fashion Design</p>
+        <button class="main__btn"><a href="#services">Portfolio</a></button>
       </div>
     </div>
 
@@ -53,54 +61,142 @@
     <div class="main" id="about">
       <div class="main__container">
         <div class="main__img--container">
-          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+          <img src="files/photo/main-photo/viki-main1.jpg" alt="designer profile" style="width: 70%; border-radius: 6px;">
         </div>
         <div class="main__content">
-          <h1>Čo robím</h1>
-          <h2>Tvorím jedinečné kúsky</h2>
-          <p>Scrollni nižšie a dozvieš sa viac</p>
+          <h1>project director</h1>
+          <h2>Viktória Janoková</h2>
+          <p>"Volám sa Viktória, mám 19 rokov a medzi moje záľuby patrí móda a moderné technológie. Rozhodla som sa tieto dve veci spojiť dokopy a vytvoriť
+                tento projekt Flows.3D. Všetko to však začalo keď som sa pred pár rokmi rozhodla kúpiť svoj prvý šijací stroj a skúsiť niečo ušiť sama.
+                 Od vtedy skúšam stále vo svojom voľnom čase tvoriť a učím sa na vlastných chybách. Možnosť digitalizácie oblečenia som objavila až neskôr,
+                  len pár mesiacov dozadu. Našla som program Clo.3D, ktorý je práve určený na digitalizáciu oblečenia a fascinovalo ma to natoľko,
+                  že som sa tomu začala venovať viac a spoznávala som pre mňa úplne nový svet na základe pár youtube videí. Projekt je avšak stále
+                    v počiatkoch, no budem rada ak si pozriete mojich pár prác v okne <strong>Portfólio."</strong></p>
         </div>
+        
       </div>
+      <div class="link__container">
+          <div class="social__icons">
+               <a href="https://www.facebook.com/viktorka.janokova" target="_blank"><img src="files/icons/fb2.png" alt="facebook"></a>
+               <a href="https://www.instagram.com/wiki.j/" target="_blank"><img src="files/icons/ig2.png" alt="instagram"></a>
+               <a href="mailto:v.janokova@gmail.com" target="_blank"><img src="files/icons/gmail2.png" alt="gmail"></a>
+          </div>
     </div>
 
-    <!-- Services Section -->
+    <hr>
+
+    <!-- Portfolio -->
     <div class="services" id="services">
-      <h1>Moje služby</h1>
+      <h1>Portfólio</h1>
       <div class="services__wrapper">
         <div class="services__card">
-          <h2>Návrh</h2>
-          <p>modern design</p>
+          <img class="mySlides1" src="files/photo/korzet 1/cela1c.jpg" alt="" style="border-radius: 4px;">
+          <img class="mySlides1" src="files/photo/korzet 1/cela2c.jpg" alt="" style="border-radius: 4px;">
+          <button class="next" onclick="plusDivs1(-1)" style="background-color: rgb(58, 58, 58)";>&#10095;</button>
+        </div>
+        <div class="service-text">
+          <h2 style="color: aliceblue;">Corset Top</h2>
+          <p style="color: aliceblue;">Obojstranný modro-čierny kúsok <br> s kosticami a zaäzovaním vzadu</p>
         </div>
         <div class="services__card">
-          <h2>Manažment sociálnych sieti</h2>
-          <p>controling the web</p>
+          <img class="mySlides2" src="files/photo/korzet 1/detail1c.jpg" alt="" style="border-radius: 4px;">
+          <img class="mySlides2" src="files/photo/korzet 1/detail2c.jpg" alt="" style="border-radius: 4px;">
+          <img class="mySlides2" src="files/photo/korzet 1/detail3c.jpg" alt="" style="border-radius: 4px;">
+          <img class="mySlides2" src="files/photo/korzet 1/detail4c.jpg" alt="" style="border-radius: 4px;">
+          <button class="next" onclick="plusDivs2(-1)" style="background-color: rgb(58, 58, 58)">&#10095;</button>
         </div>
-        <div class="services__card">
-          <h2>Ručná práca</h2>
-          <p>Traditions</p>
+        <div class="">
         </div>
-        <div class="services__card">
-          <h2>Nekonečné možnosti</h2>
-          <p>Limitless</p>
+        <div class="services__card1">
+          <video width="320" height="350" autoplay controls loop>
+               <source src="files/video/corsettop.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+             </video>
+        </div>
+        <div class="">
         </div>
       </div>
     </div>
 
-    <!-- Features Section -->
-    <div class="main" id="sign-up">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Prehliadni si portfólio</h1>
-          <h2>Objav Flows</h2>
-          <p>See what makes us different</p>
-        </div>
-        <div class="main__img--container">
-          <div class="main__img--card" id="card-2">
-            <i class="fas fa-users"></i>
-          </div>
-        </div>
-      </div>
-    </div>
+    <hr>
+
+    <div class="services" id="services">
+     <div class="services__wrapper">
+       <div class="">
+       </div>
+       <div class="services__card">
+         <img src="files/photo/bunda/cela1c.jpg" alt="" style="border-radius: 4px">
+       </div>
+       <div class="">
+       </div>
+       <div class="services__card">
+          <img class="mySlides3" src="files/photo/bunda/cela1c.jpg" alt="" style="border-radius: 4px">
+          <img class="mySlides3" src="files/photo/bunda/cela2c.jpg" alt="" style="border-radius: 4px">
+          <img class="mySlides3" src="files/photo/bunda/cela4c.jpg" alt="" style="border-radius: 4px">
+          <img class="mySlides3" src="files/photo/bunda/cela5c.jpg" alt="" style="border-radius: 4px">
+          <button class="next" onclick="plusDivs3(-1)" style="background-color: rgb(58, 58, 58)";>&#10095;</button>
+       </div>
+       <div class="">
+       </div>
+       <div class="services__card">
+            <img class="mySlides4" src="files/photo/bunda/detail1c.jpg" alt="" style="border-radius: 4px;">
+            <img class="mySlides4" src="files/photo/bunda/detail2c.jpg" alt="" style="border-radius: 4px">
+            <img class="mySlides4" src="files/photo/bunda/detail3c.jpg" alt="" style="border-radius: 4px">
+            <button class="next" onclick="plusDivs4(-1)" style="background-color: rgb(58, 58, 58)";>&#10095;</button>
+       </div>
+     </div>
+   </div>
+
+   <hr>
+
+   <div class="services" id="services">
+     <div class="services__wrapper">
+       <div class="services__card">
+          <img src="files/photo/korzet kosela/cela1.jpg" alt="" style="border-radius: 4px">
+       </div>
+       <div class="service-text">
+          <h2 style="color: #fff;">kosela opasok</h2>
+          <p style="color: #fff;">modern design</p>
+       </div>
+       <div class="services__card">
+          <img src="files/photo/korzet kosela/cela2.jpg" alt="" style="border-radius: 4px">
+       </div>
+       <div class="">
+       </div>
+       <div class="services__card">
+          <img src="files/photo/korzet kosela/detail1c.png" alt="" style="border-radius: 4px">
+       </div>
+       <div class="">
+       </div>
+     </div>
+   </div>
+
+   <hr>
+
+   <div class="services" id="services">
+     <div class="services__wrapper">
+       <div class="">
+       </div>
+       <div class="services__card">
+          <img src="files/photo/taska/cela1.png" alt="" style="border-radius: 4px">
+          <a class="next">&#10095;</a>
+       </div>
+       <div class="">
+       </div>
+       <div class="services__card">
+          <img src="files/photo/taska/cela2.jpg" alt="" style="border-radius: 4px">
+          <a class="next">&#10095;</a>
+       </div>
+       <div class="">
+       </div>
+       <div class="services__card">
+          <img src="files/photo/taska/detail3.jpg" alt="" style="border-radius: 4px">
+          <a class="next">&#10095;</a>
+       </div>
+     </div>
+   </div>
+
+   <hr>
 
     <!-- Footer Section -->
     <div class="footer__container">

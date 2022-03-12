@@ -217,6 +217,31 @@ section {
      margin-left: 30%;
 }
 
+.img-wrap {
+     display: flex;
+     justify-content: center;
+     width: 90%;
+     .img-card {
+          background-color: rgb(19, 61, 85);
+          height: 200px;
+          width: 300px;
+          margin: 1vw;
+          transition: all .5s;
+          cursor: pointer;
+          .title {
+               font-size: 60px;
+               opacity: 0%;
+               transition: all .7s;
+          }
+          &:hover {
+               transform: scale(1.1)
+          }
+          &:hover .title {
+               opacity: 100%;
+          }
+     }
+}
+
 @media (max-width: 1000px) {
      .navbar ul{
           visibility: hidden;

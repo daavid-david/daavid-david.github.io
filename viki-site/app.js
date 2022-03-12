@@ -29,16 +29,56 @@ const highlightMenu = () => {
     homeMenu.classList.remove('highlight');
     servicesMenu.classList.remove('highlight');
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 2345) {
-    servicesMenu.classList.add('highlight');
-    aboutMenu.classList.remove('highlight');
-    return;
   }
 
   if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove('highlight');
   }
 };
+
+// first page buttons 1
+
+var slideIndex1 = 1;
+showDivs1(slideIndex1);
+
+function plusDivs1(n) {
+  showDivs1(slideIndex1 += n);
+}
+
+function showDivs1(n) {
+  var i1;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex1 = 1}
+  if (n < 1) {slideIndex1 = x.length}
+  for (i1 = 0; i1 < x.length; i1++) {
+    x[i1].style.display = "none";  
+  }
+  x[slideIndex1-1].style.display = "block";  
+}
+
+// first page buttons 2
+
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function showDivs2(n) {
+  var i2;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i2 = 0; i2 < x.length; i2++) {
+    x[i2].style.display = "none";  
+  }
+  x[slideIndex2-1].style.display = "block";  
+}
+
+// second page buttons 1
+
+// second page buttons 2
 
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);

@@ -272,6 +272,42 @@ section p {
   margin-left: 30%;
 }
 
+.img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+.img-wrap .img-card {
+  background-color: #133d55;
+  height: 200px;
+  width: 300px;
+  margin: 1vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.img-wrap .img-card .title {
+  font-size: 60px;
+  opacity: 0%;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.img-wrap .img-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.img-wrap .img-card:hover .title {
+  opacity: 100%;
+}
+
 @media (max-width: 1000px) {
   .navbar ul {
     visibility: hidden;
