@@ -654,6 +654,10 @@
      transition: 0.3s ease-in;
      cursor: pointer;
    }
+
+   .service-text h2 {
+        margin-bottom: 1rem;
+   }
    
    @media screen and (max-width: 1300px) {
      .services__wrapper {
@@ -665,12 +669,20 @@
      .services__wrapper {
        grid-template-columns: 1fr;
      }
+
+     .service-text h2 {
+          margin-top: 5rem;
+     }
+
+     .service-text p {
+          margin-bottom: 5rem;
+     }
    }
    
    /* Footer CSS */
    .footer__container {
      background-color: #131313;
-     padding: 5rem 0;
+     padding-top: 5rem;
      display: flex;
      flex-direction: column;
      justify-content: center;
